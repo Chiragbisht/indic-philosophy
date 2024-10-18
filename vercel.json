@@ -1,12 +1,18 @@
 {
+    "builds": [
+      {
+        "src": "humanity_timeline/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
     "routes": [
       {
-        "src": "/indic_philosophy",
-        "dest": "/indic_philosophy.html"
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
       },
       {
-        "src": "/home",
-        "dest": "/home.html"
+        "src": "/(.*)",
+        "dest": "humanity_timeline/wsgi.py"
       }
     ]
   }
