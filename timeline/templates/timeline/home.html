@@ -7,20 +7,47 @@
     <title>Curiosity Gene</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
         body {
-            font-family: 'Indie Flower', cursive;
+            font-family: 'Exo 2', sans-serif;
             background-color: #f0e6d2;
         }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center h-screen space-y-4">
-    <a href="{% url 'indic_philosophy' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-2xl transition duration-300 ease-in-out transform hover:scale-110">
-        Indic Philosophy
-    </a>
-    <a href="{% url 'greek_philosophy' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-2xl transition duration-300 ease-in-out transform hover:scale-110">
-        Greek Philosophy
-    </a>
+<body class="flex flex-col items-center justify-center min-h-screen p-6 space-y-6">
+
+    <main class="max-w-3xl text-lg leading-relaxed">
+        <p>
+             I am Chirag Bisht, a Hindu with agnostic and eclectic views.
+        </p>
+        <p>
+            Every religion, science, and philosophical school aims to understand the origins of the universe and God.
+            And still were figuring it out. God could exist and could not exist. 
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-4">A Thought</h2>
+        <p>
+            If God exists and controls everything, why would He give us the capacity to question His existence?
+        </p>
+
+        <ul class="list-disc ml-8 mt-2">
+            <li><strong>Free Will:</strong> In Christianity and Islam, free will is a divine gift, allowing genuine faith and moral choice.</li>
+            <li><strong>God's Lila:</strong> In Hinduism, existence is a divine play, and doubt is part of the experience of life.</li>
+            <li><strong>The Universe Understanding Itself:</strong> As taught in Advaita Vedanta by Shankaracharya, we are the universe trying to comprehend its own nature.</li>
+        </ul>
+        <p class="mt-4">
+            you could check &#x1F447;
+
+        </p>
+    </main>
+    <section class="mt-6">
+        <a href="{% url 'indic_philosophy' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xl transition duration-300 transform hover:scale-105">
+            Indic Philosophy
+        </a>
+        <a href="{% url 'greek_philosophy' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xl transition duration-300 transform hover:scale-105">
+            Greek Philosophy
+        </a>
+    </section>
 </body>
 </html>
